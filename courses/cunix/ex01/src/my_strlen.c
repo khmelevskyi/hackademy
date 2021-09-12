@@ -17,10 +17,19 @@
  */
 
 unsigned int my_strlen(char *str)
+
 {
-	unsigned int strlen = 0;
 
-	while (*str++ != '\0') strlen++;
+    unsigned int strlen = 0;
 
-	return strlen;
+    while (*str++ != '\0')
+
+    {
+
+        strlen++;
+
+    }
+
+    return strlen;
+
 }

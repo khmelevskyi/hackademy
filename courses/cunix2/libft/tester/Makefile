@@ -27,7 +27,7 @@ checkmakefile:
 m: $(MANDATORY)
 
 clean:
-	make clean -C $(LIBFT_PATH) && rm -rf a.out*
+	make clean -C $(LIBFT_PATH) && rm -rf a.out* && rm -rf ../*.o
 
 fclean:
 	make fclean -C $(LIBFT_PATH) && rm -rf a.out*

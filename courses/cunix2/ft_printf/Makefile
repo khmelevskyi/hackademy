@@ -4,7 +4,7 @@ CFLAGS		+= -std=c99 -Iinclude -Wall -Wextra -Werror -g -c
 SRCS		:= $(wildcard src/*.c)
 OBJS		:= $(SRCS:.c=.o)
 LIB_NAME	:= libprintf.a
-STYLE50		:= ~/.local/bin/style50
+STYLE50		:= ./venv/bin/style50
 
 
 printf:		fclean $(OBJS)

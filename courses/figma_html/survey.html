@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+</head>
+  
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Answer all the questions!</p>
+  
+    <form id="survey-form">
+ 
+        <!-- Name -->
+        <div class="form-control">
+            <label for="name" id="name-label">
+                Name
+            </label>
+ 
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+        
+        <!-- Email -->
+        <div class="form-control">
+            <label for="email" id="email-label">
+                Email
+            </label>
+ 
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+        
+        <!-- Age -->
+        <div class="form-control">
+            <label for="age" id="number-label">
+                Age
+            </label>
+ 
+            <input type="number"
+                   id="number"
+                   min=0
+                   max=99
+                   
+                   placeholder="Enter your age" />
+        </div>
+        
+        <!-- Dropdown -->
+        <div class="form-control">
+            <label for="dropdown" id="dropdown-label">
+                Who are you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="dropdown" id="dropdown">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">
+                    Professional
+                </option>
+            </select>
+        </div>
+        
+        <!-- Radio -->
+        <div class="form-control">
+            <label>
+                Do you like apples?
+            </label>
+ 
+            <label for="radio-1">
+                <input type="radio"
+                       id="radio-1"
+                       name="radio">Yes</input>
+            </label>
+            <label for="radio-2">
+                <input type="radio"
+                       id="radio-2"
+                       name="radio">No</input>
+            </label>
+            <label for="radio-3">
+                <input type="radio"
+                       id="radio-3"
+                       name="radio">Maybe</input>
+            </label>
+        </div>
+        
+        <!-- Checkboxes -->
+        <div class="form-control">
+
+            <label>What programming languages do you know?
+            </label>
+
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp" value="C">C</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp" value="C++">C++</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp" value="C#">C#</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp" value="Java">Java</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp" value="Python">Python</input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp" value="JavaScript">JavaScript</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp" value="Rust">Rust</input></label>
+        </div>
+        
+        <!-- Textarea -->
+        <div class="form-control">
+            <label for="comment">
+                Any additional comments or suggestions?
+            </label>
+ 
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit" id="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>
